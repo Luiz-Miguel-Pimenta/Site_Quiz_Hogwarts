@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var();
+}
+
+:root {
+    --background: #10141b;
+    --claro: #e2e8f0;
+    --primaria: #4f46e5;
+}
+
+body{
+    color: var(--claro);
+    background-color: var(--background);
+}
+
+
+

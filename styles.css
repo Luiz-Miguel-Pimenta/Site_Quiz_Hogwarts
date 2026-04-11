@@ -1,20 +1,80 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: var();
+    font-family: "MedievalSharp", sans-serif;
 }
 
 :root {
-    --background: #10141b;
+    --background: #0a0c10;
     --claro: #e2e8f0;
     --primaria: #4f46e5;
+    --gold: #d4af37;
+    --gold-low: rgba(212, 175, 55, 0.3);
 }
 
-body{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     color: var(--claro);
     background-color: var(--background);
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: rgba(16, 20, 27, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--gold-low);
+}
 
+#logoSite {
+    width: 100px;
+    height: auto;
+    filter: drop-shadow(0 0 5px var(--gold-low));
+}
+
+.navegacao ul {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.navegacao ul a {
+    color: var(--claro);
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s ease-in ;
+}
+
+.navegacao ul a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color: var(--gold);
+    transition: width 0.6s ease-in;
+}
+
+.navegacao ul a:hover {
+    color: var(--gold);
+    text-shadow: 0 0 8px var(--gold-low);
+}
+
+.navegacao ul a:hover::after {
+    width: 100%;
+}
 

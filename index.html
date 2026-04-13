@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HogwartsQuiz</title>
+    <title>Hogwarts Quiz</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
 
     <header>
@@ -22,55 +24,65 @@
             </ul>
         </nav>
     </header>
-    
-    <main id="game-section">
-        <h1>Bem-vindo(a) ao mundo bruxo!</h1>
 
-        <h2>Quais serão os mistérios que vocês encontrarão aqui, meu pequeno bruxo? respondam essas perguntas para saber qual fundador você se assemelha mais</h2>
+    <main>
 
-        <button id="comecar" type="button">Começar!</button>
+        <section id="game-section">
 
+            <h1>Bem-vindo(a) ao mundo bruxo!</h1>
+            <h2>Quais serão os mistérios que vocês encontrarão aqui, meu pequeno bruxo? respondam essas perguntas para
+                saber qual fundador você se assemelha mais</h2>
+            <button id="comecar" type="button">Começar</button>
+        </section>
+
+
+        <section id="Hogwarts-section">
+
+        </section>
+
+        <section id="Houses-section">
+
+            <div id="container-casas">
+
+                <div class="casas">
+                    <img src="img/Grifinoria.png" alt="imagem-casa-grifinoria">
+                    <h2>Grifinória</h2>
+                    <p>A Grifinória foi criada para acolher alunos corajosos e destemidos. Seu fundador acreditava que o
+                        mais importante era a coragem acima de tudo, defendendo que qualquer pessoa talentosa merecia
+                        estudar em Hogwarts.</p>
+                </div>
+
+                <div class="casas">
+                    <img src="img/Sonserina.png" alt="imagem-casa-sonserina">
+                    <h2>Sonserina</h2>
+
+                    <p>Sonserina ficou conhecida por valorizar alunos ambiciosos e estratégicos. Seu fundador acreditava
+                        que a magia deveria ser ensinada principalmente a bruxos de sangue puro, o que gerou conflitos
+                        com os outros fundadores.</p>
+                </div>
+
+                <div class="casas">
+                    <img src="img/Corvinal.png" alt="imagem-casa-corvinal">
+                    <h2>Corvinal</h2>
+                    <img src="" alt="">
+                    <p>Corvinal foi criada para alunos que valorizam o conhecimento. Rowena Ravenclaw acreditava que a
+                        mente brilhante e a criatividade eram as maiores qualidades de um bruxo.</p>
+                </div>
+
+                <div class="casas">
+                    <img src="img/Lufa-lufa.png" alt="imagem-casa-lufalufa">
+                    <h2>Lufa-Lufa</h2>
+                    <p>Lufa-Lufa se destaca por acolher alunos dedicados e justos. Diferente dos outros fundadores,
+                        Helga aceitava todos os estudantes, valorizando esforço e bondade acima de habilidades
+                        específicas.</p>
+                </div>
+
+                <!--<p>As quatro casas surgiram quando os fundadores de Hogwarts decidiram dividir os alunos conforme suas qualidades. Com o tempo, o Chapéu Seletor passou a fazer essa escolha, baseando-se nos valores de cada fundador. Apesar das diferenças — especialmente o conflito entre Gryffindor e Slytherin —, juntas, as casas formam o equilíbrio que mantém Hogwarts como a maior escola de magia do mundo.</p>-->
+            </div>
+
+        </section>
     </main>
 
-    <section id="Hogwarts-section">
-
-    </section>
-
-    <section id="Houses-section">
-
-        <div id="container-casas">
-
-            <div class="casas">
-                <img src="img/Grifinoria.png" alt="imagem-casa-grifinoria">
-                <h2>Grifinória</h2>
-                <p>A Grifinória foi criada para acolher alunos corajosos e destemidos. Seu fundador acreditava que o mais importante era a coragem acima de tudo, defendendo que qualquer pessoa talentosa merecia estudar em Hogwarts.</p>
-            </div>
-
-            <div class="casas">
-                <img src="img/Sonserina.png" alt="imagem-casa-sonserina">
-                <h2>Sonserina</h2>
-            
-                <p>Sonserina ficou conhecida por valorizar alunos ambiciosos e estratégicos. Seu fundador acreditava que a magia deveria ser ensinada principalmente a bruxos de sangue puro, o que gerou conflitos com os outros fundadores.</p>
-            </div>
-
-            <div class="casas">
-                <img src="img/Corvinal.png" alt="imagem-casa-corvinal">
-                <h2>Corvinal</h2>
-                <img src="" alt="">
-                <p>Corvinal foi criada para alunos que valorizam o conhecimento. Rowena Ravenclaw acreditava que a mente brilhante e a criatividade eram as maiores qualidades de um bruxo.</p>
-            </div>
-              
-            <div class="casas">
-                <img src="img/Lufa-lufa.png" alt="imagem-casa-lufalufa">
-                <h2>Lufa-Lufa</h2>
-                <p>Lufa-Lufa se destaca por acolher alunos dedicados e justos. Diferente dos outros fundadores, Helga aceitava todos os estudantes, valorizando esforço e bondade acima de habilidades específicas.</p>
-            </div>
-
-        <!--<p>As quatro casas surgiram quando os fundadores de Hogwarts decidiram dividir os alunos conforme suas qualidades. Com o tempo, o Chapéu Seletor passou a fazer essa escolha, baseando-se nos valores de cada fundador. Apesar das diferenças — especialmente o conflito entre Gryffindor e Slytherin —, juntas, as casas formam o equilíbrio que mantém Hogwarts como a maior escola de magia do mundo.</p>-->
-        </div>
-        
-    </section>
-    
     <footer>
         <h3>Site produzido por</h3>
         <ul>
@@ -80,7 +92,8 @@
             <li>Paulo Daniel</li>
         </ul>
     </footer>
-    
+
 
 </body>
+
 </html>

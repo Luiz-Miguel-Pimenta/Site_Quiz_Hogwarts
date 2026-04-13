@@ -8,7 +8,6 @@
 :root {
     --background: #0a0c10;
     --claro: #e2e8f0;
-    --primaria: #4f46e5;
     --gold: #d4af37;
     --gold-low: rgba(212, 175, 55, 0.3);
 }
@@ -20,4 +19,6 @@ html {
 body {
     color: var(--claro);
     background-color: var(--background);
+    overflow-x: hidden;
+    width: 100%;
 }

@@ -1,0 +1,51 @@
+#houses-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 20px;
+    width: 100%;
+}
+
+.house {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 2px solid var(--gold);
+}
+
+.house:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.house img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.house h2 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.house p {
+    font-size: 0.9rem;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.grifinoria { border-color: #740001; }
+.sonserina { border-color: #1a472a; }
+.corvinal { border-color: #0e1a40; }
+.lufa-lufa { border-color: #ecb939; }

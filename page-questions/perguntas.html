@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/varinha-icon.png" type="image/x-icon">
+    <title>Hogwarts Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+  <div class="quiz-card">
+
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <h1 id="perguntaNumero">Pergunta</h1>
+
+    <div class="imagem-area">
+      <img src="https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2010/11/Hogwarts.jpeg?quality=70&strip=info&w=1024" alt="">
+    </div>
+
+    <p id="pergunta"></p>
+
+    <div class="opcoes">
+
+      <input type="radio" name="q1" id="r1">
+      <label for="r1">Resposta 1</label>
+
+      <input type="radio" name="q1" id="r2">
+      <label for="r2">Resposta 2</label>
+
+      <input type="radio" name="q1" id="r3">
+      <label for="r3">Resposta 3</label>
+
+    </div>
+
+    <button id="avancar">Avançar</button>
+
+  </div>
+
+  <script type="module" src="../script.js"></script>
+
+</body>
+</html>

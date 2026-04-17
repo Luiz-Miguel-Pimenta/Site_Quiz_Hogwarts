@@ -30,7 +30,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 
@@ -41,6 +41,10 @@ h1 {
 
 }
 
+p {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
 
 .imagem-area {
   width: 100%;
@@ -100,6 +104,13 @@ h1 {
 
   cursor: pointer;
   transition: 0.3s;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .opcoes label:hover {
@@ -115,7 +126,9 @@ h1 {
 }
 
 #avancar {
-  margin-top: 15px;
+
+  font-size: 1.3em;
+
   padding: 12px 25px;
   border-radius: 30px;
   border: none;

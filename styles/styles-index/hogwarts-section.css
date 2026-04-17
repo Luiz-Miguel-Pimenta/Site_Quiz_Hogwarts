@@ -10,3 +10,13 @@
     text-align: center;
     color: #f1f1f1;
 }
+
+#hogwarts-section h2{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#hogwarts-section p{
+    font-size: 1.2em;
+    max-width: 1000px;
+}

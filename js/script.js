@@ -13,6 +13,13 @@ let btnAvancar = document.getElementById("avancar");
 let numeroAtual = 0;
 let jaUsados = [];
 
+let score = {
+  G: 0,
+  S: 0,
+  C: 0,
+  L: 0,
+};
+
 function gerarNumeroAleatorio() {
   if (jaUsados.length === questions.length) {
     alert("Fim do quiz!");
@@ -51,6 +58,42 @@ function carregarPergunta() {
 
 carregarPergunta();
 
+function pegarResposta() {
+  const inputs = document.getElementsByClassName("resposta");
+
+  for (let i = 0; i < inputs.length; i++) {
+    if (inputs[i].checked) {
+      return i;
+    }
+  }
+
+  return null;
+}
+
 btnAvancar.addEventListener("click", () => {
+  const respostaSelecionada = pegarResposta();
+
+  if (respostaSelecionada === null) {
+    alert("Por favor, selecione uma resposta antes de avançar.");
+    return;
+  }
+
+  const pergunta = questions[jaUsados[jaUsados.length - 1]];
+  const pontuacao = pergunta.options[respostaSelecionada].score;
+
+  for (let casa in pontuacao) {
+    score[casa] += pontuacao[casa];
+  }
+
+  const inputs = document.getElementsByClassName("resposta");
+
+  for (let i = 0; i < inputs.length; i++) {
+    inputs[i].checked = false;
+  }
+
+  console.log("Resposta:", respostaSelecionada);
+  console.log("Pontuação:", pontuacao);
+  console.log("Score atual:", score);
+
   carregarPergunta();
 });

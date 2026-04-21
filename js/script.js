@@ -22,7 +22,7 @@ export let score = {
 
 function gerarNumeroAleatorio() {
   if (jaUsados.length === questions.length) {
-    alert("Fim do quiz!");
+   window.location.replace("../pages/result.html");
     jaUsados = [];
     numeroAtual = 0;
   }

@@ -154,3 +154,9 @@ p {
 #avancar:hover {
   transform: scale(1.05);
 }
+ 
+
+#PerguntaReiniciar{
+  color: black;
+  background-color: #fafaf8;
+}

@@ -1,0 +1,29 @@
+#buttonReiniciar {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background-color: var(--gold);
+  padding: 0.5rem;
+  top: 10px;
+  left: 10px;
+  border: none;
+  border-radius: 10px;
+  transition: scale 0.6s;
+}
+
+#buttonReiniciar img {
+  width: 2rem;
+}
+
+#buttonReiniciar span {
+  color: var(--claro);
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+#buttonReiniciar:hover {
+  scale: 1.08;
+}

@@ -11,7 +11,7 @@ let r3 = document.querySelector('label[for="r3"]');
 let btnAvancar = document.getElementById("avancar");
 
 let numeroAtual = 0;
-let jaUsados = [];
+let questionsAlreadyUsed = [];
 
 export let score = {
   G: 0,
@@ -21,10 +21,10 @@ export let score = {
 };
 
 function gerarNumeroAleatorio() {
-  if (jaUsados.length === questions.length) {
+  if (questionsAlreadyUsed.length === questions.length) {
     localStorage.setItem("score", JSON.stringify(score));
     window.location.replace("../pages/result.html");
-    jaUsados = [];
+    questionsAlreadyUsed = [];
     numeroAtual = 0;
   }
 
@@ -32,9 +32,9 @@ function gerarNumeroAleatorio() {
 
   do {
     numero = Math.floor(Math.random() * questions.length);
-  } while (jaUsados.includes(numero));
+  } while (questionsAlreadyUsed.includes(numero));
 
-  jaUsados.push(numero);
+  questionsAlreadyUsed.push(numero);
   return numero;
 }
 
@@ -79,7 +79,7 @@ btnAvancar.addEventListener("click", () => {
     return;
   }
 
-  const pergunta = questions[jaUsados[jaUsados.length - 1]];
+  const pergunta = questions[questionsAlreadyUsed[questionsAlreadyUsed.length - 1]];
   const pontuacao = pergunta.options[respostaSelecionada].score;
 
   for (let casa in pontuacao) {
@@ -97,4 +97,10 @@ btnAvancar.addEventListener("click", () => {
   console.log("Score atual:", score);
 
   carregarPergunta();
+});
+let btnReiniciar = document.getElementById("PerguntaReiniciar");
+
+btnReiniciar.addEventListener("click", () => {
+    localStorage.removeItem("score");
+    window.location.href = "../index.html";
 });

@@ -1,5 +1,4 @@
 body {
-
   background: radial-gradient(circle at top, #1a1a2e, #0b0b14);
 
   display: flex;
@@ -24,10 +23,9 @@ main {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  position: relative;
 }
 
-main img {
-
+main #imagemResultado {
     width: 200px;
-
 }

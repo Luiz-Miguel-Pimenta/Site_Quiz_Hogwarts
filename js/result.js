@@ -38,25 +38,16 @@ if (score.G === maiorValor) vencedores.push("Grifinória");
 if (score.S === maiorValor) vencedores.push("Sonserina");
 
 if (vencedores.length === 1) {
-  resultadoCasa.innerText = vencedores[0];
-} 
+    let casa = vencedores[0];
 
-else {
-  resultadoCasa.innerText = "Empate entre: " + vencedores.join(", ");
-}
+    resultadoCasa.innerText = casa;
+    resultadoCasa.style.color = cores[casa];
+    resultadoDescricao.innerText = descricoes[casa];
+    resultadoImagem.src = imagens[casa];
 
-if (vencedores.length === 1) {
-    resultadoCasa.innerText = vencedores[0];
-    resultadoCasa.style.color = cores[vencedores[0]];
-    resultadoDescricao.innerText = descricoes[vencedores[0]];
-    resultadoImagem.src = imagens[vencedores[0]];
-
-} 
-
-else {
+} else {
     resultadoCasa.innerText = "Empate entre: " + vencedores.join(", ");
     resultadoCasa.style.color = "#000";
-    resultadoDescricao.innerText = "Houve um empate entre as casas. Cada uma delas tem suas qualidades únicas, daça novamente e descubra sua verdadeira casa!";
+    resultadoDescricao.innerText = "Houve um empate entre as casas. Faça novamente e descubra sua verdadeira casa!";
     resultadoImagem.src = "../img/Empate.png";
 }
-

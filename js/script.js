@@ -13,7 +13,7 @@ let btnAvancar = document.getElementById("avancar");
 let numeroAtual = 0;
 let jaUsados = [];
 
-let score = {
+export let score = {
   G: 0,
   S: 0,
   C: 0,

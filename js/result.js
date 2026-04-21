@@ -1,4 +1,4 @@
-import { score } from "./script";
+let score = JSON.parse(localStorage.getItem("score"));
 
 let resultadoCasa = document.getElementById("casaResultado");
 let resultadoDescricao = document.getElementById("descricaoResultado");

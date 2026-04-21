@@ -22,7 +22,8 @@ export let score = {
 
 function gerarNumeroAleatorio() {
   if (jaUsados.length === questions.length) {
-   window.location.replace("../pages/result.html");
+    localStorage.setItem("score", JSON.stringify(score));
+    window.location.replace("../pages/result.html");
     jaUsados = [];
     numeroAtual = 0;
   }

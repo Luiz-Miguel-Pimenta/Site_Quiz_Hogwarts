@@ -1,2 +1,6 @@
 @import url(/styles/global.css);
 @import url(perguntas.css);
+@import url(container_imagem_pergunta.css);
+@import url(progress-container.css);
+@import url(ButtonReiniciar.css);
+

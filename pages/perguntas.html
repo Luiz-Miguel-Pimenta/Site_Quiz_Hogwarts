@@ -14,18 +14,25 @@
 <body>
   
   <div class="quiz-card">
-    <button id="PerguntaReiniciar">Voltar ao Inicio</button>
+    <button id="ButtonReiniciar">Voltar ao Inicio</button>
     <div class="progress-container">
       <div class="progress-bar" id="progressBar"></div>
     </div>
 
-    <h1 id="perguntaNumero">Pergunta</h1>
+    <h1 id="perguntaNumero"></h1>
 
-    <div class="imagem-area">
-      <img src="https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2010/11/Hogwarts.jpeg?quality=70&strip=info&w=1024" alt="">
+    <div class="container_imagem_pergunta">
+
+      <div class="container_imagem">
+        <img class="img_chapeu fechada" src="../img/Chapéu_seletor_boca_fechada.png" alt="Chapéu-Hogwarts">
+        <img class="img_chapeu aberta" src="../img/Chapéu_seletor_boca_aberta.png" alt="Chapéu-Hogwarts">
+      </div>
+      
+      <div class="pergunta_balão">
+        <p class="pergunta_fala" id="pergunta"></p>
+      </div>
+
     </div>
-
-    <p id="pergunta"></p>
 
     <div class="opcoes">
 

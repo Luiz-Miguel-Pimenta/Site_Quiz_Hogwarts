@@ -98,7 +98,7 @@ btnAvancar.addEventListener("click", () => {
 
   carregarPergunta();
 });
-let btnReiniciar = document.getElementById("PerguntaReiniciar");
+let btnReiniciar = document.getElementById("ButtonReiniciar");
 
 btnReiniciar.addEventListener("click", () => {
     localStorage.removeItem("score");

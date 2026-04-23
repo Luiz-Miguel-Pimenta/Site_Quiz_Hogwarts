@@ -1,0 +1,62 @@
+.container_imagem_pergunta {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+
+    background-image: url(https://i.redd.it/oux8vsy00sn51.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+
+    padding: 20px;
+}
+
+.container_imagem {
+    position: relative;
+    width: 250px; 
+    height: 250px;
+    flex-shrink: 0;
+}
+
+.img_chapeu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0 10px rgba(197, 157, 63, 0.5));
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+.fechada {
+    animation: flutuar 3s ease-in-out infinite, falarFechado 0.8s infinite;
+}
+
+.aberta {
+    animation: flutuar 3s ease-in-out infinite, falarAberto 0.8s infinite;
+}
+
+@keyframes falarFechado {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+@keyframes falarAberto {
+    0%, 49% { opacity: 0; }
+    50%, 100% { opacity: 1; }
+}
+
+.pergunta_fala {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    color: #1a1a2e;
+    font-weight: 600;
+}
+
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}

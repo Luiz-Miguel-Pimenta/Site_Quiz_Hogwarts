@@ -107,7 +107,7 @@ btnAvancar.addEventListener("click", () => {
 });
 
 let btnReiniciar = document.getElementById("ButtonReiniciar");
-+-
+
 btnReiniciar.addEventListener("click", () => {
     localStorage.removeItem("score");
     window.location.href = "../index.html";

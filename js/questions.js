@@ -1,5 +1,5 @@
 export const questions = [
-    // Pergunta 1
+   
     {
         textQuestion: "Diante de um desafio perigoso, qual sua primeira reação?",
         options: [
@@ -32,7 +32,7 @@ export const questions = [
             },
         ],
     },
-    // Pergunta 2
+
     {
         textQuestion: "Qual dessas qualidades você mais valoriza em si mesmo?",
         options: [
@@ -65,7 +65,7 @@ export const questions = [
             },
         ],
     },
-    // Pergunta 3
+  
     {
         textQuestion: "Você encontra um pergaminho com um feitiço proibido. O que faz?",
         options: [
@@ -98,7 +98,7 @@ export const questions = [
             },
         ],
     },
-    //Pergunta 4
+    
     {
         textQuestion: "Qual seria o seu animal de estimação ideal em Hogwarts?",
         options: [
@@ -131,7 +131,7 @@ export const questions = [
             },
         ],
     },
-    //Pergunta 5
+    
     {
         textQuestion: "Como você gostaria de ser lembrado após deixar Hogwarts?",
         options: [
@@ -164,7 +164,7 @@ export const questions = [
             },
         ],
     },
-    //Pergunta 6
+   
     {
         textQuestion: "Se você pudesse escolher uma poção, qual escolheria?",
         options: [
@@ -197,7 +197,7 @@ export const questions = [
             },
         ],
     },
-    //Pergunta 7
+    
     {
         textQuestion: "Em um trabalho em grupo, qual o seu papel?",
         options: [
@@ -230,7 +230,7 @@ export const questions = [
             },
         ],
     },
-    //Pergunta 8
+
     {
         textQuestion: "Qual caminho você escolhe em uma floresta escura?",
         options: [
@@ -263,7 +263,7 @@ export const questions = [
             },
         ],
     },
-    //Pergunta 9
+    
     {
         textQuestion: "O que você mais teme?",
         options: [
@@ -296,7 +296,7 @@ export const questions = [
             },
         ],
     },
-    //Pergunta 10
+
     {
         textQuestion: "Qual objeto mágico você mais deseja possuir?",
         options: [

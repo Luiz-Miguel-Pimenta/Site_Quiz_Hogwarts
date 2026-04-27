@@ -3,38 +3,43 @@ import { questions } from "./questions.js";
 let perguntaText = document.getElementById("pergunta");
 let perguntaNumero = document.getElementById("perguntaNumero");
 let progresso = document.getElementsByClassName("progress-bar");
+let btnAvancar = document.getElementById("avancar");
 
 let r1 = document.querySelector('label[for="r1"]');
 let r2 = document.querySelector('label[for="r2"]');
 let r3 = document.querySelector('label[for="r3"]');
 
-let btnAvancar = document.getElementById("avancar");
-
 let numeroAtual = 0;
-let questionsAlreadyUsed = [];
+let questoesJaUsadas = [];
 
-export let score = {
+export const score = {
+
   G: 0,
   S: 0,
   C: 0,
   L: 0,
+
 };
 
 function gerarNumeroAleatorio() {
-  if (questionsAlreadyUsed.length === questions.length) {
+
+  if (questoesJaUsadas.length === questions.length) {
+
     localStorage.setItem("score", JSON.stringify(score));
     window.location.replace("../pages/result.html");
-    questionsAlreadyUsed = [];
+    questoesJaUsadas  = [];
     numeroAtual = 0;
+    
   }
 
   let numero;
 
   do {
     numero = Math.floor(Math.random() * questions.length);
-  } while (questionsAlreadyUsed.includes(numero));
+  } 
+  while (questoesJaUsadas.includes(numero));
 
-  questionsAlreadyUsed.push(numero);
+  questoesJaUsadas.push(numero);
   return numero;
 }
 
@@ -63,12 +68,14 @@ function pegarResposta() {
   const inputs = document.getElementsByClassName("resposta");
 
   for (let i = 0; i < inputs.length; i++) {
+
     if (inputs[i].checked) {
       return i;
     }
-  }
 
-  return null;
+  }
+    return null;
+
 }
 
 btnAvancar.addEventListener("click", () => {
@@ -79,7 +86,7 @@ btnAvancar.addEventListener("click", () => {
     return;
   }
 
-  const pergunta = questions[questionsAlreadyUsed[questionsAlreadyUsed.length - 1]];
+  const pergunta = questions[questoesJaUsadas[questoesJaUsadas.length - 1]];
   const pontuacao = pergunta.options[respostaSelecionada].score;
 
   for (let casa in pontuacao) {
@@ -98,7 +105,12 @@ btnAvancar.addEventListener("click", () => {
 
   carregarPergunta();
 });
+<<<<<<< Updated upstream
 let btnReiniciar = document.getElementById("ButtonReiniciar");
+=======
+
+let btnReiniciar = document.getElementById("PerguntaReiniciar");
+>>>>>>> Stashed changes
 
 btnReiniciar.addEventListener("click", () => {
     localStorage.removeItem("score");

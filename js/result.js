@@ -1,4 +1,4 @@
-let score = JSON.parse(localStorage.getItem("score")) || {L:0, C:0, G:0, S:0};;
+let score = JSON.parse(localStorage.getItem("score")) || {L:0, C:0, G:0, S:0};
 
 let resultadoCasa = document.getElementById("casaResultado");
 let resultadoDescricao = document.getElementById("descricaoResultado");
@@ -58,6 +58,8 @@ resultadoCasa.style.color = cor;
 resultadoDescricao.innerText = descricao;
 resultadoImagem.src = imagem;
 resultadoImagem.alt = `Brasão da casa ${casaGanhadora}`;
+
+console.log(score);
 
 btnReiniciar.addEventListener("click", () => {
     localStorage.removeItem("score");

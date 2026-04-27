@@ -105,12 +105,8 @@ btnAvancar.addEventListener("click", () => {
 
   carregarPergunta();
 });
-<<<<<<< Updated upstream
-let btnReiniciar = document.getElementById("ButtonReiniciar");
-=======
 
-let btnReiniciar = document.getElementById("PerguntaReiniciar");
->>>>>>> Stashed changes
+let btnReiniciar = document.getElementById("ButtonReiniciar");
 
 btnReiniciar.addEventListener("click", () => {
     localStorage.removeItem("score");
